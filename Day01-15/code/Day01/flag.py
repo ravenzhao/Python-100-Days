@@ -7,15 +7,15 @@ import turtle
 def draw_rectangle(x, y, width, height):
     """绘制矩形"""
     turtle.goto(x, y)
-    turtle.pencolor('red')
-    turtle.fillcolor('red')
-    turtle.begin_fill()
+    turtle.pencolor('red')          #画笔颜色为红色
+    turtle.fillcolor('red')         #填充颜色为红色
+    turtle.begin_fill()             #开始填充
     for i in range(2):
         turtle.forward(width)
         turtle.left(90)
         turtle.forward(height)
         turtle.left(90)
-    turtle.end_fill()
+    turtle.end_fill()               #结束填充
 
 
 def draw_star(x, y, radius):
